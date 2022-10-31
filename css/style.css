@@ -1,0 +1,1120 @@
+@charset "UTF-8";
+
+/*-------------------------
+  初期値
+-------------------------*/
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  color: #303030;
+  line-height: 1.6;
+  font-feature-settings: "palt";
+  text-size-adjust: 100%;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+}
+
+a:hover,
+a:active {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #fff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1.9;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.6rem;
+    margin-bottom: 25px;
+  }
+  h2 {
+    font-size: 2rem;
+    padding: 7.5px 3px;
+    line-height: 1.5;
+  }
+}
+
+h3 {
+  font-size: 2.3rem;
+  text-align: center;
+}
+
+p {
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: bold;
+  color: #f00;
+  font-size: 1.125em;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+.section-title {
+  background-color: #64bc24;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.button-block {
+  text-align: center;
+}
+
+.button-block p {
+  margin-bottom: 13px;
+  letter-spacing: 0px;
+}
+
+.movie-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  padding: 0;
+  width: 30%;
+  max-width: 240px;
+}
+
+@media screen and (max-width: 768px) {
+  .movie-btn {
+    width: 64.52%;
+  }
+}
+
+.movie-btn a img {
+  width: 100%;
+}
+
+
+/*-------------------------
+  グローバル
+-------------------------*/
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+.go-top {
+  position: fixed;
+  bottom: 30px;
+  right: 16%;
+  width: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .go-top {
+    width: 60px;
+    right: 10%;
+  }
+}
+
+.go-top img {
+  width: 100%;
+}
+
+/*-------------------------
+  ヘッダー
+-------------------------*/
+header {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 145px 25px;
+  background: url("../images/ph_header.png") center center / cover no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    max-width: 768px;
+    padding: 75px 24px 30px;
+    background: url("../images/ph_header.png") bottom center / cover no-repeat;
+  }
+}
+
+.header-title {
+  margin-bottom: 233px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-title {
+    margin-bottom: 100px;
+  }
+}
+
+.header-title .header-logo {
+  max-width: 210px;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.header-logo img {
+  width: 100%;
+}
+
+header p {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header p,
+  .button-click {
+    width: 83%;
+    margin: 0 auto;
+  }
+}
+
+/*-------------------------
+  人が好き・自然が好き・沖縄が好き･･･
+-------------------------*/
+.summary .section-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .summary .section-contents {
+    flex-wrap: wrap;
+    width: 88%;
+    margin: 0 auto;
+  }
+}
+
+.summary-image {
+  width: 19%;
+}
+
+.summary-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .summary-image {
+    max-width: 300px;
+    width: 49.9%;
+    text-align: center;
+  }
+  .summary-image img {
+    width: 61%;
+  }
+}
+
+.summary-text {
+  width: 56.86%;
+}
+
+@media screen and (max-width: 768px) {
+  .summary-text {
+    width: 100%;
+    order: 3;
+  }
+}
+
+.summary-text p:first-child {
+  margin-bottom: 5px;
+}
+
+/*-------------------------
+  自然体験型観光の企画・運営をしている会社です。
+-------------------------*/
+.about-us-image {
+  width: 100%;
+}
+
+.about-us-image img {
+  width: 100%;
+}
+
+.about-us-title {
+  width: 158px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  background:  url("../images/pic_midashi.png") center 22px / contain no-repeat;
+}
+
+.about-us-text {
+  width: 95.4%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us-text {
+    width: 88%;
+  }
+}
+
+.about-us-text-strong {
+  margin-top: 7px;
+}
+
+/*-------------------------
+  多国籍アドベンチャーツアーとは？
+-------------------------*/
+.project-description-item {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-description-item {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+
+  .project-image img {
+    width: 100%;
+  }
+}
+
+.project-detail {
+  padding: 26px 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-detail {
+    padding: 20px 0;
+  }
+}
+
+.project-detail p {
+  font-size: 1.55rem;
+}
+
+/*-------------------------
+  求める人物像と条件
+-------------------------*/
+.requirements-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.requirements-text {
+  width: 49%;
+  padding-left: 70px;
+  background-image: url(../images/pic_mark.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: left center;
+  margin-bottom: 31px;
+}
+
+@media screen and (max-width: 768px) {
+  .requirements-list {
+    display: block;
+  }
+  .requirements-text {
+    width: 88%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    min-height: 70px;
+  }
+}
+
+.requirements-text strong {
+  font-size: 1.6rem;
+  color: #00a1c7;
+}
+
+/*-------------------------
+  多国籍ツアー実現に向けた
+  ロードマップ
+-------------------------*/
+.road-map .section-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.road-map-tables {
+  width: 41%;
+}
+
+@media screen and (max-width: 768px) {
+  .road-map .section-contents {
+    display: block;
+  }
+  .road-map-tables {
+    max-width: 310px;
+    width: 82.67%;
+    margin: 0 auto;
+  }
+}
+
+.road-map-table {
+  width: 100%;
+  background-color: #ffffd7;
+  table-layout: fixed;
+  margin-bottom: 15px;
+}
+
+.road-map-table th,
+.road-map-table td {
+  border: 4px solid #ffffd7;
+}
+
+.road-map-table td {
+  padding: 2px 5px;
+  height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .road-map-table td {
+    padding: 2px;
+  }
+}
+
+.road-map-table-year {
+  background-color: #99c2ff;
+  text-align: center;
+}
+
+.road-map-table-month-before {
+  background-color: #cde1ff;
+  text-align: center;
+  font-weight: normal;
+}
+
+.road-map-table-month-after {
+  background-color: #caffbf;
+  text-align: center;
+  font-weight: normal;
+}
+
+.road-map-table-factor {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.road-map-table-plan,
+.road-map-table-idea {
+  font-size: 1.4rem;
+  vertical-align: top;
+}
+
+.road-map-table-plan.none,
+.road-map-table-idea.none {
+  background-color: #ffffd7;
+}
+
+
+.road-map-table-plan {
+  background-color: #def8fe;
+}
+
+.road-map-table-idea {
+  background-color: #fffe9b;
+}
+
+.road-map-texts {
+  width: 55%;
+}
+
+@media screen and (max-width: 768px) {
+  .road-map-texts {
+    width: 72%;
+    margin: 0 auto;
+  }
+}
+
+.road-map-text {
+  position: relative;
+  margin-top: 5px;
+}
+
+.road-map-text::before {
+  position: absolute;
+  top: 9px;
+  left: -15px;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  content: '';
+  background-color: #000;
+}
+
+.road-map-text.notice::before {
+  position: absolute;
+  top: -5px;
+  left: -17px;
+  display: inline-block;
+  content: '※';
+  font-size: 2rem;
+  font-weight: normal;
+  background: none;
+}
+
+/*-------------------------
+  アースシップ沖縄とは･･･
+-------------------------*/
+.works .section-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .works .section-title {
+    margin-bottom: 25px;
+  }
+
+  .works .section-contents {
+    display: block;
+  }
+}
+
+.work-block {
+  width: 45%;
+  margin: 0 10px 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-block {
+    width: 80%;
+    margin: 0 auto 32px;
+  }
+}
+
+.work-image {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .work-image {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.work-image img {
+  width: 100%;
+}
+
+.work-block h3 {
+  margin: 15px 0 10px;
+  font-weight: normal;
+  font-size: 2.7rem;
+}
+
+@media screen and (max-width: 768px) {
+  .work-block h3 {
+    margin: 20px 0 10px;
+  }
+}
+
+.work-detail {
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .work-detail {
+    padding: 10px 20px;
+  }
+}
+
+.work-movie .movie-btn {
+  width: 66.67%;
+}
+
+
+/*-------------------------
+  主なアクティビティ
+-------------------------*/
+.activities .section-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.activity-block {
+  max-width: 240px;
+  width: 30%;
+  margin-right: 6.5px;
+  margin-left: 6.5px;
+}
+
+@media screen and (max-width: 768px) {
+  .activities .section-contents {
+    display: block;
+  }
+  .activity-block {
+    max-width: 330px;
+    width: 88%;
+    margin: 0 auto;
+  }
+}
+
+.activity-image {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .activity-image {
+    margin: 0 auto 20px;
+    width: 72.72%;
+    max-width: 240px;
+  }
+}
+
+.activity-image img {
+  width: 100%;
+}
+
+.activity-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .activity-title {
+    margin-bottom: 7px;
+  }
+}
+
+.activity-detail {
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .activity-detail {
+    padding: 10px 0 18px;
+    text-align: center;
+  }
+}
+
+/*-------------------------
+  ガイド経験やアウトドア実績が
+  無くてもOK
+-------------------------*/
+.training .section-contents {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .training .section-contents {
+    display: block;
+  }
+}
+
+.training-image {
+  width: 45%;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .training-image {
+    width: 96%;
+  }
+}
+
+.training-image img {
+  width: 100%;
+}
+
+.training-detail {
+  width: 46%;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .training-detail {
+    width: 88%;
+    margin: 20px auto 0;
+  }
+}
+
+.training-detail p {
+  font-size: 1.6rem;
+}
+
+.training-detail strong {
+  font-weight: normal;
+  color: #00aad8;
+  font-size: 1.8rem;
+}
+
+.training-logo {
+  width: 55.56%;
+  margin: 12px auto 18px;
+}
+
+.training-logo img {
+  width: 100%;
+}
+
+/*-------------------------
+  ココで働くことのメリット
+-------------------------*/
+.merit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .merit-list {
+    display: block;
+  }
+}
+
+.merit-item {
+  max-width: 360px;
+  width: 44.375%;
+  margin-bottom: 23px;
+}
+
+@media screen and (max-width: 768px) {
+  .merit-item {
+    width: 94.67%;
+    margin: 0 auto 23px;
+  }
+}
+
+.merit-image {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .merit-image {
+    height: 250px;
+  }
+}
+
+.image1 {
+  background:  url("../images/ph_merit01.png") center center / contain no-repeat;
+}
+.image2 {
+  background:  url("../images/ph_merit02.png") center center / contain no-repeat;
+}
+.image3 {
+  background:  url("../images/ph_merit03.png") center center / contain no-repeat;
+}
+.image4 {
+  background:  url("../images/ph_merit04.png") center center / contain no-repeat;
+}
+.image5 {
+  background:  url("../images/ph_merit05.png") center center / contain no-repeat;
+}
+.image6 {
+  background:  url("../images/ph_merit06.png") center center / contain no-repeat;
+}
+.image7 {
+  background:  url("../images/ph_merit07.png") center center / contain no-repeat;
+}
+.image8 {
+  background:  url("../images/ph_merit08.png") center center / contain no-repeat;
+}
+
+.merit-text {
+  text-align: center;
+}
+
+/*-------------------------
+  募集要項と待遇
+-------------------------*/
+.guidelines .container {
+  background: url("../images/bg_logo.png") center center / contain no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .guidelines .container {
+    background: none;
+  }
+}
+
+.guidelines .section-contents {
+  max-width: 640px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .guidelines .section-title {
+    margin-bottom: 30px;
+  }
+
+  .guidelines .section-contents {
+    width: 74.66%;
+    background:  url("../images/bg_logo.png") center center / 70% no-repeat;
+  }
+}
+
+.guideline-target-list {
+  margin-left: 15px;
+}
+
+.guideline-target-item {
+  position: relative;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 768px) {
+  .guideline-target-item {
+    margin-bottom: 7px;
+  }
+}
+
+.guideline-target-item::before {
+  position: absolute;
+  top: 9px;
+  left: -15px;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  content: '';
+  background-color: #000;
+}
+
+.guideline-target-item strong {
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.guideline-reception {
+  margin-top: 15px;
+}
+
+.guideline-reception-list {
+  margin-left: 15px;
+}
+
+.guideline-reception-item {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.guideline-reception-item::before {
+  position: absolute;
+  top: 9px;
+  left: -15px;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+  content: '';
+  background-color: #000;
+}
+
+/*-------------------------
+ご応募･お問合せ･ご質問はお気軽に
+-------------------------*/
+.contact .section-contents {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .section-contents {
+    display: block;
+  }
+}
+
+.contact-detail {
+  max-width: 360px;
+  width: 45%;
+}
+
+.contact-detail > p {
+  font-size: 1.8rem;
+  color:#00aad8;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-detail {
+    width: 91%;
+    margin: 0 auto;
+  }
+  .contact-detail > p {
+    width: 81.88%;
+    margin: 0 auto;
+  }
+}
+
+.prior-information {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .prior-information {
+    margin-top: 25px;
+  }
+}
+
+.prior-information-caption {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .prior-information-caption {
+    margin-left: 0;
+  }
+  .prior-information-caption:nth-of-type(2) {
+    margin-left: 60px;
+  }
+}
+
+.prior-information-list {
+  counter-reset: my-counter;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .prior-information-list {
+    width: 77.19%;
+    margin: 10px auto 10px;
+  }
+}
+
+.prior-information-item {
+  font-size: 1.6rem;
+  position: relative;
+  margin-left: 20px;
+}
+
+.prior-information-item::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  border: 1px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14px;
+  width: 14px;
+  font-size: 85%;
+  line-height: 1;
+  position: absolute;
+  top: 6px;
+  left: -20px;
+}
+
+.contact-image {
+  width: 45%;
+  max-width: 360px;
+}
+
+.contact-image img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-image {
+    width: 100vw;
+    max-width: 768px;
+  }
+}
+
+/*-------------------------
+  企業情報
+-------------------------*/
+.corporate h3 {
+  font-size: 2.8rem;
+  color: #00a1c7;
+  margin-bottom: 35px;
+}
+
+.corporate-wrapper {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .corporate-wrapper {
+    display: block;
+  }
+}
+
+.corporate-logo {
+  width: 28%;
+}
+
+@media screen and (max-width: 768px) {
+  .corporate-logo {
+    width: 58%;
+    margin: 0 auto;
+  }
+}
+
+.corporate-logo img {
+  width: 100%;
+}
+
+.corporate-table {
+  width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+  .corporate-table {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.corporate-table th,
+.corporate-table td {
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding: 10px 0px;
+}
+
+.corporate-table th {
+  font-weight: normal;
+  text-align: center;
+  vertical-align: top;
+  width: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .corporate-table th {
+    width: 40px;
+  }
+}
+
+.corporate-table td {
+  vertical-align: top;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .corporate-table td {
+    padding-left: 15px;
+  }
+}
+
+.corporate-list {
+  counter-reset: my-counter;
+  list-style: none;
+}
+
+.corporate-item {
+  position: relative;
+  margin-left: 20px;
+}
+
+.corporate-item::before {
+  content: counter(my-counter);
+  counter-increment: my-counter;
+  border: 1px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14px;
+  width: 14px;
+  font-size: 85%;
+  line-height: 1;
+  position: absolute;
+  top: 6px;
+  left: -20px;
+}
+
+/*-------------------------
+フッター
+-------------------------*/
+footer {
+  height: 230px;
+  background-color: #666666;
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    height: 150px;
+  }
+}
+
+footer small {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  footer small {
+    font-size: 1.2rem;
+  }
+}
+
+footer p {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 3.1rem;
+  margin-top: 15px;
+  color: #fff;
+  font-weight: normal;
+}
+
+footer p img {
+  width: 46%;
+  margin-left: 25px;
+  max-width: 205px;
+}
+
+@media screen and (max-width: 768px) {
+  footer p {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+  footer p img {
+    width: 50%;
+    max-width: 175px;
+  }
+}
